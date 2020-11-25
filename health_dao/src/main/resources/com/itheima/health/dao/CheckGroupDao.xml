@@ -46,7 +46,7 @@
         delete from t_checkgroup_checkitem where checkgroup_id=#{id}
     </delete>
 
-    <select id="findCountByCheckGroupId" parameterType="int" resultType="int">
+    <select id="findSetmealCountByCheckGroupId" parameterType="int" resultType="int">
         select count(1) from t_setmeal_checkgroup where checkgroup_id=#{id}
     </select>
 
